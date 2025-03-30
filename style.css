@@ -1,68 +1,83 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #141414;
+    --blue: #0000ff;
+    --lightblue: #21a5e2;
+    --whithe: #FFFFFF;
+    --gray: #464646;
+    --darkblue: #15435a;
+    --darkgray: #1F1F1F;
 }
 
 body {
-    background-color: black;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 100vh;
 }
 
 div {
-    background-color: rgb(43, 107, 226);
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 340px;
-    height: 88vh;
-    display: block;
-    border-radius: 5%;
-    padding: 10px;
-}
-
-.container {
-    background-color: rgb(47, 180, 241);
+    background-color: var(--darkgray);
+    border-radius: 12px;
     text-align: center;
-    width: 300px;
-    height: 80vh;
-    margin-top: 3%;
-    display: block;
-    border-radius: 5%;
+    width: 340px;
+    padding: 40px;
 }
 
 img {
+    width: 130px;
+    margin-top: 15px;
+    margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3%;
-    width: 130px;
-    height: 130px;
-    margin-top: 3%;
+    display: block;
     border-radius: 50%;
 }
 
 h1 {
-    color: white;
-    margin-bottom: 7%;
+    color: var(--whithe);
+    margin-bottom: 4px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
 }
 
-ul {
+ul,li {
     list-style: none;
-    border-radius: 5%;
-}
-
-li {
-    background-color: rgb(30, 68, 85);
-    border-radius: 15%;
-    margin-top: 6%;
-    width: 230px;
-    height: 36px;
-    margin-left: auto;
-    margin-right: auto;
-    
 }
 
 a {
-    color: white;
+    background-color: var(--gray);
+    color: var(--whithe);
     text-decoration: none;
-    align-items: center;
+    margin-bottom: 16px;
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+a:hover {
+    color: var(--black);
+    background-color: var(--lightblue);
+    transition: 0.4s;
+}
+
+strong {
+    color: var(--blue);
+    font-size: 14px;
+}
+
+p {
+    margin-block: 24px;
+    color: var(--whithe);
+    font-size: 14px;
 }
